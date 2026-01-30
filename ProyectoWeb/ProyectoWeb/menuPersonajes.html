@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web</title>
+    <link rel="stylesheet" href="css/styleSlideshow.css">
+</head>
+<body>
+    <div class="menu-cont">
+        <nav>
+            <ul class="menu-opt">
+                <li>
+                    <a href="menuConfiguracion.html">Configuración</a>
+                </li>
+                <li>
+                    <a href="menuPersonajes.html">Personajes</a>
+                </li>
+                <li>
+                    <a href="landingPage.html">Inicio</a>
+                    <!-- <img src="media/images/Logo.png"> -->
+                </li>
+                <li>
+                    <a href="menuMapas.html">Mapas</a>
+                </li>
+                <li>
+                    <a href="menuHUD.html">Interfaces</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1>Personajes</h1>
+    </header>
+    <main>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="media/images/Freddy.png" style="width:100%">
+            <div class="text">Freddy</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="media/images/Bonnie.png" style="width:100%">
+            <div class="text">Bonnie</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="media/images/Chica.png" style="width:100%">
+            <div class="text">Chica</div>
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="media/images/Foxy.png" style="width:100%">
+            <div class="text">Foxy</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- JQUERY CDN -->
+    <script src="js/scriptSlideshow.js"></script>
+</body>
+</html>

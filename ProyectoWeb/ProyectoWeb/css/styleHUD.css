@@ -1,0 +1,141 @@
+/* La regla especial @font-face me permite cargar una tipografía desde un archivo local y asignarle un nombre mediante la propiedad font-family */
+@font-face 
+{
+  /* El nombre que le damos a la tipografía que cargamos */
+  font-family: "FNAF";
+  src: url(../fonts/SHOWG.ttf);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "FNAF";
+}
+
+body
+{
+    background-image: url(../media/images/Galaxy.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.menu-cont
+{
+    padding: 2em;
+    background-image: url(../media/images/Purple-Dephts.png);
+}
+
+.menu-cont > a
+{
+    display: block;
+    width: 100%;
+}
+
+nav .menu-opt
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Estado en reposo */
+nav ul a
+{
+    display: block;
+    font-weight: bold;
+    color: yellow;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul a:hover
+{
+    color: white;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 1em;
+}
+
+.game-container 
+{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: url("../media/images/BackBattle.png") no-repeat center center/cover;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 5.5em;
+    overflow: hidden;
+}
+
+.character 
+{
+    position: absolute;
+    width: 20em;
+    transition: opacity 0.3s, transform 0.5s;
+}
+
+.flipped 
+{
+    width: 15em;
+    transform: scaleX(-1);
+}
+
+.health-bar 
+{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    accent-color: red;
+}
+
+.health-text 
+{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.boss-health 
+{
+    width: 300px;
+    height: 15px;
+    bottom: 20px;
+    left: 75px;
+}
+
+.boss-health-text 
+{
+    bottom: 40px;
+    left: 210px;
+    font-size: 24px;
+}
+
+.switch-button 
+{
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.switch-button:hover
+{
+    opacity: 75%;
+}

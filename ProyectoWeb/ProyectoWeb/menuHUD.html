@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web</title>
+    <link rel="stylesheet" href="css/styleHUD.css">
+</head>
+<body>
+    <div class="menu-cont">
+        <nav>
+            <!-- <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label> -->
+            <ul class="menu-opt">
+                <li>
+                    <a href="menuConfiguracion.html">Configuración</a>
+                </li>
+                <li>
+                    <a href="menuPersonajes.html">Personajes</a>
+                </li>
+                <li>
+                    <a href="landingPage.html">Inicio</a>
+                    <!-- <img src="media/images/Logo.png"> -->
+                </li>
+                <li>
+                    <a href="menuMapas.html">Mapas</a>
+                </li>
+                <li>
+                    <a href="menuHUD.html">Interfaces</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1>Interfaces</h1>
+    </header>
+    <main>
+        <div class="game-container">
+            <img src="media/images/AutoChipperT.png" class="character" id="boss" style="top: 75px; left: 50px;">
+            <input type="range" class="health-bar boss-health" id="healthBoss" min="0" max="135" value="135">
+            <span class="health-text boss-health-text" id="bossHealthText">135</span>
+    
+            <div id="circle-container" style="position: absolute; top: 100px; left: 400px; width: 200px; height: 200px;">
+                <img src="media/images/FreddyT.png" class="character flipped" id="char1" style="top: -100px; left: 50px;">
+                <img src="media/images/BonnieT.png" class="character flipped" id="char2" style="top: 0px; left: 200px;">
+                <img src="media/images/ChicaT.png" class="character flipped" id="char3" style="top: 75px; left: -50px;">
+                <img src="media/images/FoxyT.png" class="character flipped" id="char4" style="top: 150px; left: 75px;">
+            </div>
+    
+            <div id="health-container" style="position: absolute; top: 10px; right: 115px; text-align: right;">
+                <input type="range" class="health-bar" id="health1" min="0" max="135" value="120">
+                <span class="health-text" id="healthText1">120</span><br>
+                <input type="range" class="health-bar" id="health2" min="0" max="135" value="125">
+                <span class="health-text" id="healthText2">125</span><br>
+                <input type="range" class="health-bar" id="health3" min="0" max="135" value="130">
+                <span class="health-text" id="healthText3">130</span><br>
+                <input type="range" class="health-bar" id="health4" min="0" max="135" value="135">
+                <span class="health-text" id="healthText4">135</span>
+            </div>
+    
+            <div class="switch-button" id="switch">SWITCH</div>
+        </div>    
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- JQUERY CDN -->
+    <script src="js/scriptHUD.js"></script>
+</body>
+</html>

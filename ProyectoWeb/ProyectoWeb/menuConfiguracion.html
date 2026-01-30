@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web</title>
+    <link rel="stylesheet" href="css/styleConfiguracion.css">
+</head>
+<body>
+    <div class="menu-cont">
+        <nav>
+            <!-- <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label> -->
+            <ul class="menu-opt">
+                <li>
+                    <a href="menuConfiguracion.html">Configuración</a>
+                </li>
+                <li>
+                    <a href="menuPersonajes.html">Personajes</a>
+                </li>
+                <li>
+                    <a href="landingPage.html">Inicio</a>
+                    <!-- <img src="media/images/Logo.png"> -->
+                </li>
+                <li>
+                    <a href="menuMapas.html">Mapas</a>
+                </li>
+                <li>
+                    <a href="menuHUD.html">Interfaces</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1>Configuración</h1>
+    </header>
+    <main>
+        <div class="video-cont">
+            <video id="video" controls autoplay loop>
+                <source src="media/videos/FNAF-Gameplay.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        
+        <div class="controls">
+            <label for="resolution">Resolución:</label>
+            <input type="range" id="resolution" min="240" max="1200" step="240" value="720">
+            
+            <label for="graphics">Gráficos (Brillo y Contraste):</label>
+            <input type="range" id="graphics" min="50" max="150" step="10" value="100">
+            
+            <label for="volume">Volumen:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- JQUERY CDN -->
+    <script src="js/scriptConfiguracion.js"></script>
+</body>
+</html>
